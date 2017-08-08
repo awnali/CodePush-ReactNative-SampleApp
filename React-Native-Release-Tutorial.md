@@ -47,6 +47,11 @@ And add following line under buildTypes release:
 
     signingConfig signingConfigs.release
     
+After that your file should look like:
+
+<img width="1149" alt="screen shot 2017-08-08 at 3 14 50 pm" src="https://user-images.githubusercontent.com/627361/29071415-8c2d5d2a-7c54-11e7-8fe1-c4554967e90f.png">
+
+    
 #### Generating the signed APK
 
 Now you are ready to release build:

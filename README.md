@@ -193,7 +193,7 @@ Your App.js should look like:
                         Cmd+D or shake for dev menu
                     </Text>
                     <Text style={styles.instructions}>
-                        Version 1.2
+                        Version 1.1
                     </Text>
                     <Text style={styles.instructions}>
                         {this.state.logs}
@@ -226,6 +226,11 @@ Your App.js should look like:
 Run the app on ios, press cmd+D and click remote Debugging. After that open http://localhost:8081/debugger-ui and look into console. Whenever you’ll refresh your app, you should see something like:
 
 <center><img width="1440" alt="screen shot 2017-08-08 at 2 49 35 pm" src="https://user-images.githubusercontent.com/627361/29068680-db50f346-7c48-11e7-9c77-a452b0a92627.png"></center>
+
+And your App should look like:
+
+<img width="371" alt="screen shot 2017-08-08 at 3 58 23 pm" src="https://user-images.githubusercontent.com/627361/29070949-72f79a5c-7c52-11e7-85ce-586f3697fc5a.png">
+
 
 Which means on launch your application is looking for code-push update.  Code push is integrated now but only for debug mode, lets see how we can release the app for IOS and Android.
 

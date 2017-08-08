@@ -1,4 +1,4 @@
-**Release Build for IOS**
+## Release Build for IOS
 
  1. Open the project in Xcode,
     SampleCodePushApp/ios/SampleCodePushApp.xcodeproj
@@ -12,13 +12,16 @@
 
 Run application from xcode in your simulator, and it should work like charm. If you want to run it on physical device you just have to sign to application and remove the test case project from build process.
 
-**Release Build for Android**
+## Release Build for Android
 
+#### Generating Key
     keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 
-It will generate the  my-release-key.keystore file, in my case it was [ENTER PATH].
+It will generate the  my-release-key.keystore file, you can get the Keytool in your jdk and in my case it was at /Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/bin (Mac), and in Windows it will be at C:\Program Files\Java\jdkx.x.x_x\bin
 
 Copy the my-release-key.keystore file to your project’s android/app folder (Don’t forget to add this in your gitignore file)
+
+#### Adding Key to gradle build:
 
 Edit the file ~/.gradle/gradle.properties and add the following:
 
@@ -43,6 +46,8 @@ Edit your android/app/build.gradle file and add following lines under defaultCon
 And add following line under buildTypes release:
 
     signingConfig signingConfigs.release
+    
+#### Generating the signed APK
 
 Now you are ready to release build:
 

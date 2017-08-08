@@ -1,4 +1,4 @@
-## Release Build for IOS
+## Release Build for React Native IOS
 
  1. Open the project in Xcode,
     SampleCodePushApp/ios/SampleCodePushApp.xcodeproj
@@ -12,7 +12,7 @@
 
 Run application from xcode in your simulator, and it should work like charm. If you want to run it on physical device you just have to sign to application and remove the test case project from build process.
 
-## Release Build for Android
+## Release Build for React Native Android
 
 #### Generating Key
     keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000

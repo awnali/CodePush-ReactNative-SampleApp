@@ -15,7 +15,7 @@ Verify if app is working, you should get following screen.
 1. `npm install -g code-push-cli`
 2. if you havn’t register, otherwise skip: `code-push register`
 3.	 `code-push app add SampleApp-iOS ios react-native`
-4.	`code-push app add SampleApp-Android android react-native`
+4.	`code-push app add SampleApp-Android android react-native` OR `appcenter apps create -d <appDisplayName> -o <operatingSystem>  -p <platform> `
 5.	https://mobile.azure.com/users/[YOUR_USERNAME]/apps, go to this link and verify your apps are created successfully.
 6.	`react-native link react-native-code-push`
 7.	Enter the keys, when asked (to retrieve keys: `code-push deployment ls SampleApp-Ios -k`)
